@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="NycSchool"
+            type="com.example.android.a20180327_surajitbiswas_nycschools.viewModel.NycSchoolViewModel"></variable>
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_schoolName"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/school_details_margin_left"
+                android:layout_marginTop="@dimen/school_details_margin_top"
+                android:textSize="@dimen/school_details_text_size"
+                android:text="@string/school_details_school_name"/>
+
+            <TextView
+                android:id="@+id/tv_schoolNameValue"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/school_details_margin_left"
+                android:layout_marginTop="@dimen/school_details_margin_top"
+                android:text="@{NycSchool.schoolName}"
+                android:textSize="@dimen/school_details_text_size"
+                tools:text="NEW EXPLORATIONS INTO SCIENCE, TECHNOLOGY AND MATH HIGH SCHOOL" />
+
+            <include layout="@layout/line"></include>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/school_details_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_numSatTestTaker"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/school_details_margin_left"
+                    android:layout_marginTop="@dimen/school_details_margin_top"
+                    android:textSize="@dimen/school_details_text_size"
+                    android:text="@string/school_details_sat_test_taker" />
+
+                <TextView
+                    android:id="@+id/tv_numSatTestTakerValue"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/school_details_margin_top"
+                    android:layout_marginTop="@dimen/school_details_margin_top"
+                    android:text="@{NycSchool.satTakerNumber}"
+                    android:textSize="@dimen/school_details_text_size"
+                    tools:text="100" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/school_details_margin_top">
+
+                <TextView
+                    android:id="@+id/tv_readingAvgScore"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/school_details_margin_left"
+                    android:layout_marginTop="@dimen/school_details_margin_top"
+                    android:textSize="@dimen/school_details_text_size"
+                    android:text="@string/school_details_avg_reading_Score" />
+
+                <TextView
+                    android:id="@+id/tv_readingAvgScoreValue"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/school_details_margin_top"
+                    android:layout_marginTop="@dimen/school_details_margin_top"
+                    android:text="@{NycSchool.satReadingAvg}"
+                    android:textSize="@dimen/school_details_text_size"
+                    tools:text="100" />
+            </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mathAvgScore"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/school_details_margin_left"
+                    android:layout_marginTop="@dimen/school_details_margin_top"
+                    android:textSize="@dimen/school_details_text_size"
+                    android:text="@string/school_details_avg_math_score" />
+
+                <TextView
+                    android:id="@+id/tv_mathAvgScoreValue"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/school_details_margin_top"
+                    android:layout_marginTop="@dimen/school_details_margin_top"
+                    android:text="@{NycSchool.satMathAvg}"
+                    android:textSize="@dimen/school_details_text_size"
+                    tools:text="100" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_writingAvgScore"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/school_details_margin_left"
+                    android:layout_marginTop="@dimen/school_details_margin_top"
+                    android:textSize="@dimen/school_details_text_size"
+                    android:text="@string/school_details_avg_writing_score" />
+
+                <TextView
+                    android:id="@+id/tv_writingAvgScoreValue"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/school_details_margin_top"
+                    android:layout_marginTop="@dimen/school_details_margin_top"
+                    android:text="@{NycSchool.satWritingAvg}"
+                    android:textSize="@dimen/school_details_text_size"
+                    tools:text="100" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

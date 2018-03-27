@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NYC Schools</string>
+    <string name="school_details_school_name">School Name :</string>
+    <string name="school_details_sat_test_taker">SAT Test Taker :</string>
+    <string name="school_details_avg_reading_Score">Avg Reading Score :</string>
+    <string name="school_details_avg_math_score">Avg Math Score :</string>
+    <string name="school_details_avg_writing_score">Avg Writing Score :</string>
+
+</resources>

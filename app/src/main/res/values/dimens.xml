@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main -->
+    <dimen name="schoolName_leftMargin">10dip</dimen>
+    <dimen name="schoolName_topMargin">5dip</dimen>
+
+    <!-- School Details -->
+    <dimen name="school_details_margin_left">20dip</dimen>
+    <dimen name="school_details_margin_top">10dip</dimen>
+    <dimen name="school_details_text_size">20sp</dimen>
+
+    <!-- Line -->
+    <dimen name="line_height">2dip</dimen>
+    <dimen name="line_margin_top">5dip</dimen>
+</resources>
