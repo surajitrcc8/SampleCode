@@ -18,8 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SchoolDetailsActivity" />
-        <activity android:name=".SchoolListActivity"></activity>
+        <activity android:name=".SchoolDetailsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SchoolDetailsActivity" />
+        </activity>
+        <activity android:name=".SchoolListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SchoolListActivity" />
+        </activity>
     </application>
 
 </manifest>

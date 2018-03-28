@@ -16,6 +16,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class NycSchoolService {
 
     private NycSchoolClient mNycSchoolClient;
+
+    /**
+     * Default constructor that create retrofit and set the client
+     */
     public NycSchoolService() {
 
         Retrofit retrofit = new Retrofit.Builder()

@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.a20180327_surajitbiswas_nycschools.MainActivity">
+    <LinearLayout
+        android:id="@+id/ll_loadingContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:visibility="invisible">
+    <ProgressBar
+        android:layout_width="@dimen/schoolName_layout_width"
+        android:layout_height="@dimen/schoolName_layout_height" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loading_text"
+        style="@style/TextAppearance.AppCompat.Caption"/>
+    </LinearLayout>
+
     <Button
         android:id="@+id/b_loadSchoolList"
         android:layout_width="wrap_content"
-        android:layout_height="50dip"
+        android:layout_height="@dimen/schoolName_layout_height"
         android:layout_gravity="center"
-        android:text="Load School List"
-        android:onClick="loadSchoolList"
-        />
+        android:text="@string/load_school_list"
+        android:onClick="loadSchoolList" />
 </FrameLayout>
+</layout>

@@ -1,12 +1,11 @@
 package com.example.android.a20180327_surajitbiswas_nycschools.model;
 
-import android.databinding.BaseObservable;
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
 
-/**
+/** This hold the web service response data
  * Created by surajitbiswas on 3/27/18.
  */
 

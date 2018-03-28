@@ -14,7 +14,7 @@ import com.example.android.a20180327_surajitbiswas_nycschools.viewModel.NycSchoo
 
 import java.util.ArrayList;
 
-/**
+/** Recycler view adapter class
  * Created by surajitbiswas on 3/27/18.
  */
 
@@ -60,7 +60,6 @@ public class NycSchoolAdapter extends RecyclerView.Adapter<NycSchoolAdapter.NycS
             super(itemView);
             mViewDataBinding = DataBindingUtil.bind(itemView);
             itemView.setOnClickListener(this);
-
         }
 
         @Override

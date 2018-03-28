@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import retrofit2.Response;
 
-/**
+/** Interface that holds web service call back
  * Created by surajitbiswas on 3/27/18.
  */
 

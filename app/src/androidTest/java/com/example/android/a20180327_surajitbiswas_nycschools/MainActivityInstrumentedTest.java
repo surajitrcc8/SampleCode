@@ -1,5 +1,6 @@
 package com.example.android.a20180327_surajitbiswas_nycschools;
 
+import android.content.pm.ActivityInfo;
 import android.support.test.espresso.Espresso;
 import android.support.test.espresso.IdlingResource;
 import android.support.test.rule.ActivityTestRule;
@@ -14,8 +15,8 @@ import org.junit.runner.RunWith;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
-import static android.support.test.espresso.contrib.RecyclerViewActions.scrollToPosition;
 import static android.support.test.espresso.matcher.ViewMatchers.hasDescendant;
+import static android.support.test.espresso.matcher.ViewMatchers.isRoot;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
@@ -53,7 +54,11 @@ public class MainActivityInstrumentedTest {
         Espresso.unregisterIdlingResources(mIdlingResource);
     }
 
-    // Convenience helper
+    /**
+     * This method gives us the Recycler View Matcher
+     * @param recyclerViewId
+     * @return
+     */
     public static RecyclerViewMatcher withRecyclerView(final int recyclerViewId) {
         return new RecyclerViewMatcher(recyclerViewId);
     }

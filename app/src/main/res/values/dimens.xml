@@ -2,8 +2,14 @@
 <resources>
 
     <!-- Main -->
+    <dimen name="schoolName_layout_width">50dip</dimen>
+    <dimen name="schoolName_layout_height">50dip</dimen>
+
+    <!-- School Name -->
     <dimen name="schoolName_leftMargin">10dip</dimen>
     <dimen name="schoolName_topMargin">5dip</dimen>
+
+
 
     <!-- School Details -->
     <dimen name="school_details_margin_left">20dip</dimen>

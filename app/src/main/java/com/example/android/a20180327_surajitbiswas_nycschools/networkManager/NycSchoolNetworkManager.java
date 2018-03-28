@@ -10,7 +10,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/**
+/** This class is responsible to make the network call and do any business logic implementation
  * Created by surajitbiswas on 3/27/18.
  */
 

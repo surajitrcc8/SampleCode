@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
-/**
+/** Retrofit client. Here we can list down all our http or https method call
  * Created by surajitbiswas on 3/27/18.
  */
 
